@@ -1,11 +1,12 @@
 import React from 'react';
+import logo from '../image/logo.webp';
 
 const Header = () => {
   return (
     <header class="header">
       <div class="container">
         <div class="header__logo">
-          <img width="38" src="./img/pizza-logo.svg" alt="Pizza logo" />
+          <img width="40" src={logo} alt="Pizza logo" />
           <div>
             <h1>React Pizza app</h1>
             <p>the most delicious pizza in the universe</p>

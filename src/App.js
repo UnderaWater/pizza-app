@@ -17,6 +17,7 @@ function App() {
           <h2 class="content__title">All pizzas</h2>
           <div class="content__items">
             <PizzaBlock />
+            <PizzaBlock />
           </div>
         </div>
       </div>
