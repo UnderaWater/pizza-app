@@ -18,6 +18,9 @@ function App() {
           <div className="content__items">
             <PizzaBlock />
             <PizzaBlock />
+            {pizzas.map(obj => (
+              <PizzaBlock {...obj} />
+            ))}
           </div>
         </div>
       </div>
