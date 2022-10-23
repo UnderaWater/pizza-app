@@ -29,8 +29,8 @@ const Sort = () => {
         <b>Sort by:</b>
         <span onClick={() => setOpen(!open)}>{sortName}</span>
       </div>
-      <div className="sort__popup">
-        {open && (
+      {open && (
+        <div className="sort__popup">
           <ul>
             {list.map((name, i) => (
               <li
@@ -41,8 +41,8 @@ const Sort = () => {
               </li>
             ))}
           </ul>
-        )}
-      </div>
+        </div>
+      )}
     </div>
   );
 };

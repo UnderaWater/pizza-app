@@ -9,8 +9,12 @@ const Home = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    setItems(arr);
-    setIsLoading(false);
+    fetch('https://634af88ed90b984a1e33f065.mockapi.io/items')
+      .then((res) => res.json())
+      .then((arr) => {
+        setItems(arr);
+        setIsLoading(false);
+      });
   }, []);
 
   return (
